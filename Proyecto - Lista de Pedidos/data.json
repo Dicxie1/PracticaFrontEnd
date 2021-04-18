@@ -1,0 +1,25 @@
+{
+    "empleado":[
+        {
+            "nombre": "dicxie",
+            "apellido": "Madrigal",
+            "departamento": "ventas"
+        },
+        {
+            "nombre": "Jose",
+            "apellido": "Morales",
+            "departamento": "Recursos humanos"
+        },
+        {
+            "nombre": "Karla",
+            "apellido": "Antonio",
+            "departamento": "Atención al cliente"
+        },
+        {
+            "nombre": "Karla",
+            "apellido": "Antonio",
+            "departamento": "Atención al cliente"
+        }
+
+    ]
+}

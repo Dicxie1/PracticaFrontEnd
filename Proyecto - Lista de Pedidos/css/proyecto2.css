@@ -1,0 +1,44 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: rgba(221, 219, 219, 0.924);
+}
+.container{
+    padding: 30px;
+    margin: 0px auto;
+    width: 800px;
+    background-color: white;
+    box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.30);
+    border-radius: 20px;
+}
+.control-group{
+    display: inline-block;
+    margin: 5px 0px 5px 0px;
+    padding: 5px;
+    width: 98%;
+}
+.control-group input, label, select{
+    display: block;
+    width: 100%;
+}
+
+.control-group-size-2{
+    width: 48%;
+}
+
+input, select{
+    height: 20px;
+    border-radius: 5px;
+    border: solid 1.5px #D3D3D3;
+}
+
+input[type=text]:hover, select:hover{
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+
+input[type=text]:focus, select:focus {
+    box-shadow: 0 0 5pt 2pt #D3D3D3;
+    outline-width: 0px;
+}

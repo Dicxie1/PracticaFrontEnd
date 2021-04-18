@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 - Lista de Pedido</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="encabezado">Lista de Pedido</h1>
+        <select name="idioma" id="idioma">
+            <option value="0">Seleccione un idioma</option>
+            <option value="1">English</option>
+            <option value="2">Castellano</option>
+        </select>
+        <fieldset>
+        <legend>Datos de cliente</legend>
+        <label for="txtdni">DNI: </label><input id="txtdni" type="text" placeholder="601-30122121-003F">
+        <label for="txtcliente">Cliente</label><input id="txtcliente" type="text" placeholder="Jose">
+        <label for="txtemail">correo: </label>
+        <input id="txtemail" type="email" placeholder="tucorreo@dominio.com"> 
+        <label for="txtnombre">telefono: </label>
+        <input type="tel" id="txttelfono" placeholder="(505) 89123456"><br>
+        Sexo: 
+        <form>
+            <input type="radio" name="rbhom" id="rbhom"> Hombre <br>
+            <input type="radio" name="rbhom" id="rbmuj"> Mujer
+        </form>
+        </fieldset>
+        <fieldset>
+            <legend>Datos del Pedido</legend>
+            <label for="txtidPedido">ID pedido: </label><input type="text" id="txtidPedido">
+            <label for="txtFechaPedido">Fecha Pedido: </label>
+            <input id="txtFechaPedido" type="date">
+            <label for="txtFechaEntrega">Fecha Pedido: </label>
+            <input id="txtFechaEntrega" type="date">
+            
+        </fieldset>
+        <fieldset>
+            <legend>Productos</legend>
+            <lablel>Codido</lablel>
+            <input id="txtCodProduct" type="text" size="4">
+            <lablel>Producto</lablel>
+            <input id="txtNombreProduct" type="text" size="30">
+            <lablel>cantidad</lablel>
+            <input id="txtCantidad" type="text" size="5">
+            <lablel>Precio</lablel>
+            <input id="txtPrecio" type="text" size="9">
+            <lablel>sub-total</lablel>
+            <input id="txtSubTotal" type="text" size="9" disabled>
+            <button id="btnAgregar" disabled>Agregar</button>
+        </fieldset>
+        <fieldset>
+            <legend>Lista de Productos</legend>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td><strong>Codigo</strong></td>
+                        <td><strong>Producto</strong></td>
+                        <td><strong>Cantidad</strong></td>
+                        <td><strong>Precio</strong></td>
+                        <td><strong>Sub-total</strong></td>
+                    </tr>
+                </thead>
+                <!--En esta etiqueta se agregar los datos-->
+                <tbody id="listaProducto">
+                </tbody>
+            </table>
+        </fieldset>
+        <script src="../js/main.js"></script>
+    </div>
+</body>
+</html>
+
+<!--
+    https://www.wextensible.com/temas/css3-alinear/block.html#:~:text=No%20hay%20ninguna%20propiedad%20espec%C3%ADfica,block%20en%20su%20propiedad%20display%20.
+-->
