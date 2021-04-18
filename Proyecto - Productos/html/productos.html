@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Producto - Lista de Producto</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Nuevo Productos</h2>
+        <form>
+            <p>
+                <label for="">Código:</label>
+                <input id="txtcodigo" type="text" placeholder="codigo.."> 
+            </p>
+            <p>
+                <label>Producto:</label>
+                <input type="text" name="" id="txtProducto" placeholder="producto..">
+            </p>
+            <p>
+                <label>Precio:</label>
+                <input type="text" name="" id="txtPrecio" placeholder="0.0">   
+            </p>
+            <p>
+                <label>Categoria:</label>
+                <select name="" id="txtCategoria">
+                    <option value="">Selecione el idioma</option>
+                    <option value="">Percederos</option>
+                    <option value="">Granos básicos</option>
+                    <option value="">Enbutidos</option>
+                </select>
+            </p>
+            <p>
+                <label>Proveedor:</label>
+                <input type="text" name="" id="txtProveedor" placeholder="proveedor..">
+                <label for=""></label>
+            </p>
+            <form >
+                <input type="radio" name="stock" value="true"> En stock
+                <input type="radio" name="stock" value="false"> Sin stock
+            </form>
+            <div class="center">
+                <button id="btnCancelar" >Cancelar</button>
+                <button id="btnAgregar">Agregar</button>
+            </div>
+           
+    </div>
+    
+    <div class="result">
+        <h2>Lista de prodcutos</h2>
+        <div class="rigth">
+            <button id="btnEliminar">Eliminar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td><strong>Codigo</strong></td>
+                    <td><strong>Nombre</strong></td>
+                    <td><strong>Precio</strong></td>
+                    <td><strong>Categoria</strong></td>
+                    <td><strong>Proveedor</strong></td>
+                    <td><strong>Stock</strong></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+               
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total</td>
+                    <td>C$ 0.00</td>
+                </tr>
+                <tr>
+                    <td colspan="5">IVA</td>
+                    <td>0.20</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Neto Pagar</td>
+                    <td>C$ 0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

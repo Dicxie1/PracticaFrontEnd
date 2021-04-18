@@ -1,0 +1,79 @@
+html{
+    background-color: rgb(235, 235, 235);
+}
+.container{
+    width: 990px;
+    background-color: white;
+    margin: 0px auto;
+    padding: 40px 0px 20px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 0px rgb(0, 0, 0, 0.30);
+}
+.container:hover{
+    box-shadow: 20px 20px 30px 0px rgb(0, 0, 0, 0.30);
+}
+
+.container label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+.center{
+    margin: 0px auto;
+    max-width: max-content;
+    max-height: max-content;
+    align-content: center;
+}
+.result{
+    padding: 20px 20px 20px 20px;
+    background-color: white;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgb(0, 0, 0, 0.30);
+    width: 990px;
+    min-height: 400px;
+}
+.rigth{
+    width: 90px;
+    margin: 0px 20px 15px auto;
+}
+table{
+    border-collapse: collapse;
+}
+
+tr, td{
+    border-bottom: 1px solid rgb(175, 175, 175);
+    width: 160px;
+    height: 20px;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
+.table-responsive{
+    overflow: scroll;
+}
+thead tr, thead td {
+    font-weight: bold;
+    background-color: #4CAF50;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+tfoot tr {
+
+    background-color: initial;
+}
+tfoot td{
+    background-color: #ddd;
+    text-align: right;
+}
+button{
+    background-color: rgb(112, 112, 252);
+    border: none;
+    min-height: 30px;
+    min-width:  100px;
+}
+button:hover{
+    background-color: rgb(80, 80, 252);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.30);
+}
