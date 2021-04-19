@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Ubuntu Mono Regular';
+    src: url('../font/UbuntuMono-Regular.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container{
+    font-family:  'Roboto', sans-serif;
+    width: 980px;
+    margin: 0px auto;
+    overflow-wrap: scroll;
+}
+.container > h2{
+ text-align: center;   
+}
+.container textarea{
+    text-align: left;
+    width: 90%;
+    outline: none;
+    font-family: 'Ubuntu Mono Regular',monospace;
+    font-weight: 600;
+    font-size: 18px;
+}
+.line{
+    border: 2px solid black;
+}
